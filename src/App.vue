@@ -1,5 +1,12 @@
 <template>
   <v-app>
+    <Appbar />
+    <v-content>
+      <router-view />
+    </v-content>
+
+  </v-app>
+  <!-- <v-app>
     <v-app-bar
       app
       color="primary"
@@ -40,17 +47,17 @@
     <v-content>
       <HelloWorld/>
     </v-content>
-  </v-app>
+  </v-app> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Appbar from './components/Appbar';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Appbar,
   },
 
   data: () => ({
