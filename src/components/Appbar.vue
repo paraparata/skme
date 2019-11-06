@@ -36,12 +36,16 @@
       ></v-text-field>
       <v-spacer></v-spacer>
 
-      <v-btn text color="orange darken-2">
+      <v-btn text color="orange darken-2" to="/login">
         <!-- <v-icon color="orange darken-2">mdi-heart</v-icon> -->
         Login
       </v-btn>
+      <v-btn text color="orange darken-2" to="/signup">
+        <!-- <v-icon color="orange darken-2">mdi-heart</v-icon> -->
+        Sign Up
+      </v-btn>
 
-      <v-menu
+      <!-- <v-menu
         left
         bottom
       >
@@ -60,7 +64,7 @@
             <v-list-item-title>Option {{ n }}</v-list-item-title>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
     </v-app-bar>
 </template>
 
