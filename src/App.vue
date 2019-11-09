@@ -4,6 +4,7 @@
     <v-content>
       <router-view />
     </v-content>
+    <Footer />
 
   </v-app>
   <!-- <v-app>
@@ -51,13 +52,15 @@
 </template>
 
 <script>
-import Appbar from './components/Appbar';
+import Appbar from './components/Appbar'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
 
   components: {
     Appbar,
+    Footer
   },
 
   data: () => ({

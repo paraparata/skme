@@ -3,47 +3,60 @@
       app
       color="white accent-5"
       dark
-      class="pr-10 pl-10"
+      class="px-10"
     >
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-
-      <v-toolbar-title>
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="82"
-          src="../assets/seekme-logo.png"
-          width="60"
-          height="60"
-        />
+      <v-col>
+        <v-toolbar-title>
+        <router-link to="/">
+          <v-img
+            alt="Vuetify Name"
+            class="shrink mt-1"
+            contain
+            min-width="82"
+            src="../assets/seekme-logo.png"
+            width="60"
+            height="60"
+          />
+        </router-link>
       </v-toolbar-title>
-
-      <v-spacer></v-spacer>
+      </v-col>
+      <v-col>
+        <v-card outlined light>
+        <!-- <div class="batas"> -->
+          <v-text-field
+            hide-details
+            prepend-inner-icon="mdi-magnify"
+            single-line
+            color="orange"
+            rounded
+            light
+            clearable
+            placeholder="Search"
+            class="mt-1 caption"
+          ></v-text-field>
+        </v-card>
+      </v-col>
+      <v-col class="d-flex justify-end">
+         <v-btn text tile-click color="orange darken-2" to="/login">
+          <!-- <v-icon color="orange darken-2">mdi-heart</v-icon> -->
+          Login
+        </v-btn>
+        <v-btn text tile color="orange darken-2" to="/signup">
+          <!-- <v-icon color="orange darken-2">mdi-heart</v-icon> -->
+          Sign Up
+        </v-btn>
+      </v-col>
+    </v-app-bar>
+     <!-- <v-spacer></v-spacer> -->
       <!-- <v-btn icon>
         <v-icon color="orange darken-2">mdi-magnify</v-icon>
       </v-btn> -->
-      <v-text-field
-        hide-details
-        prepend-icon="mdi-magnify"
-        single-line
-        color="orange"
-        outlined
-        rounded
-        light
-        placeholder="Search"
-        loader-heiht
-      ></v-text-field>
-      <v-spacer></v-spacer>
+      
+      <!-- </v-col> -->
+      <!-- <v-spacer></v-spacer> -->
 
-      <v-btn text color="orange darken-2" to="/login">
-        <!-- <v-icon color="orange darken-2">mdi-heart</v-icon> -->
-        Login
-      </v-btn>
-      <v-btn text color="orange darken-2" to="/signup">
-        <!-- <v-icon color="orange darken-2">mdi-heart</v-icon> -->
-        Sign Up
-      </v-btn>
+     
 
       <!-- <v-menu
         left
@@ -65,11 +78,10 @@
           </v-list-item>
         </v-list>
       </v-menu> -->
-    </v-app-bar>
 </template>
 
 <style scoped>
-.search{
-  padding: 5em;
+.batas{
+  border: 2px solid yellow;
 }
 </style>
