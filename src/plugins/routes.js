@@ -2,7 +2,7 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Login from '../components/Login'
 import SignUp from '../components/SignUp'
-import Blog from '../components/Blog'
+import Blog from '../pages/Blog'
 
 const routes = [
     { path: '/', component: Home },

@@ -1,9 +1,11 @@
 <template>
-    <v-app-bar
+    <v-container fluid>
+      <v-app-bar
       app
       color="white accent-5"
       dark
       class="px-10"
+      fixed
     >
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
       <v-col>
@@ -11,7 +13,7 @@
         <router-link to="/">
           <v-img
             alt="Vuetify Name"
-            class="shrink mt-1"
+            class="mt-1"
             contain
             min-width="82"
             src="../assets/seekme-logo.png"
@@ -48,6 +50,7 @@
         </v-btn>
       </v-col>
     </v-app-bar>
+    </v-container>
      <!-- <v-spacer></v-spacer> -->
       <!-- <v-btn icon>
         <v-icon color="orange darken-2">mdi-magnify</v-icon>

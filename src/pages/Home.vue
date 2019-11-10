@@ -1,94 +1,31 @@
 <template>
-    <v-content>
-        <v-container
-        class="fill-height"
-        fluid
-      >
-        <v-row
-          align="center"
-          justify="center"
-        >
-          <v-col
-            cols="12"
-            sm="8"
-            md="4"
-          >
-          <div class="batas"><span class="caption">Coba</span></div>
-            
-            <v-card class="elevation-12">
-              <v-toolbar
-                color="primary"
-                dark
-                flat
-              >
-                <v-toolbar-title>Login form</v-toolbar-title>
-                <v-spacer />
-                <v-tooltip bottom>
-                  <template v-slot:activator="{ on }">
-                    <v-btn
-                      :href="source"
-                      icon
-                      large
-                      target="_blank"
-                      v-on="on"
-                    >
-                      <v-icon>mdi-code-tags</v-icon>
-                    </v-btn>
-                  </template>
-                  <span>Source</span>
-                </v-tooltip>
-                <v-tooltip right>
-                  <template v-slot:activator="{ on }">
-                    <v-btn
-                      icon
-                      large
-                      href="https://codepen.io/johnjleider/pen/pMvGQO"
-                      target="_blank"
-                      v-on="on"
-                    >
-                      <v-icon>mdi-codepen</v-icon>
-                    </v-btn>
-                  </template>
-                  <span>Codepen</span>
-                </v-tooltip>
-              </v-toolbar>
-              <v-card-text>
-                <v-form>
-                  <v-text-field
-                    label="Login"
-                    name="login"
-                    prepend-icon="mdi-account"
-                    type="text"
-                  />
+  <v-container fluid>
+    <div class="my-10 px-10">
+      <v-row no-gutters class="justify-center">
+        <h1 class="display-3 font-weight-black text-center">seekme</h1>
+      </v-row>
+      <v-row no-gutters class="justify-center">
+        <h1 class="title text-center">Tempat Talent Bertemu Event Organizer</h1>
+      </v-row>
+    </div>
+    <v-row no-gutters class="px-10 text-center">
+      <v-col v-for="n in 5" :key="n" cols="12" sm="4">
+        <v-card class="pa-2" outlined tile>{{n}} of 3 columns</v-card>
+      </v-col>
+    </v-row>
+    <!-- <v-row no-gutters class="px-10 text-center">
 
-                  <v-text-field
-                    id="password"
-                    label="Password"
-                    name="password"
-                    prepend-icon="mdi-lock"
-                    type="password"
-                  />
-                </v-form>
-              </v-card-text>
-              <v-card-actions>
-                <v-spacer />
-                <v-btn color="primary">Login</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-content>
+
+    </v-row> -->
+  </v-container>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 <style scoped>
-.batas{
+.batas {
   border: 2px solid yellow;
 }
 </style>
