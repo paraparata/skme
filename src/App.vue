@@ -1,11 +1,8 @@
 <template>
   <v-app>
     <Appbar />
-    <v-content>
-      <router-view />
-    </v-content>
+    <router-view />
     <Footer />
-
   </v-app>
   <!-- <v-app>
     <v-app-bar
@@ -48,15 +45,15 @@
     <v-content>
       <HelloWorld/>
     </v-content>
-  </v-app> -->
+  </v-app>-->
 </template>
 
 <script>
-import Appbar from './components/Appbar'
-import Footer from './components/Footer'
+import Appbar from "./components/Appbar";
+import Footer from "./components/Footer";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     Appbar,
@@ -65,6 +62,6 @@ export default {
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
