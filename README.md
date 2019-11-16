@@ -11,5 +11,19 @@
     npm install vue-router
 ```
 
+## Categories
+- Influencer
+- Singer
+- Band/Group Music
+- DJ
+- Speaker
+- MC
+- Stand Up Comedian
+- Writer
+- Model
+- Photographer
+- Videographer
+- Makeup Artist
+
 ## refs
 

@@ -21,6 +21,9 @@
     <v-row>
       <Categories />
     </v-row>
+    <v-row justify="center">
+      <v-text class="display-2 font-weight-medium">(VwV) Creative Talents</v-text>
+    </v-row>
     <v-row no-gutters class="py-9 text-center justify-center">
       <v-col v-for="n in cards" :key="n" cols="11" class="mx-5 mb-5" lg="2" md="3" sm="5">
         <v-card>
