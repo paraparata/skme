@@ -21,8 +21,9 @@
     <v-row>
       <Categories />
     </v-row>
-    <v-row justify="center">
-      <v-text class="display-2 font-weight-medium">(VwV) Creative Talents</v-text>
+    <v-divider></v-divider>
+    <v-row class="mt-7" justify="center" align="center">
+      <code class="title mx-4 red--text text--lighten-1">(ﾉ≧∀≦)ﾉ</code><v-text class="display-2 font-weight-black">Your Creative Talents</v-text>
     </v-row>
     <v-row no-gutters class="py-9 text-center justify-center">
       <v-col v-for="n in cards" :key="n" cols="11" class="mx-5 mb-5" lg="2" md="3" sm="5">
@@ -52,6 +53,9 @@
           </v-card-actions>
         </v-card>
       </v-col>
+    </v-row>
+    <v-row class="my-7" justify="center" align="center">
+      <code class="title mx-4 red--text text--lighten-1">(・∧‐)ゞ</code><v-text class="display-2 font-weight-black">How We Works?</v-text>
     </v-row>
   </v-container>
 </template>

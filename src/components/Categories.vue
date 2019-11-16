@@ -12,7 +12,7 @@
         <v-card class="ma-4" height="100" width="300" @click="toggle">
           <v-img
             :src="n.img"
-            :gradient="active ? 'to bottom, rgba(255,167,38,.4), rgba(255,167,38,.6)' : 'to bottom, rgba(0,0,0,.7), rgba(0,0,0,.7)'"
+            :gradient="active ? 'to bottom, rgba(255,167,38,.4), rgba(255,167,38,.6)' : 'to bottom, rgba(0,0,0,.6), rgba(0,0,0,.6)'"
             class="white--text align-end"
             height="100px"
             center
