@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless fixed color="grey darken-4" class="footer">
+  <v-footer padless fixed color="grey darken-4" class="footers">
     <v-row class="px-10" cols="12">
       <div>
         <span
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style>
-.footer {
+.footers {
   /* font-size: 4pt; */
   font-family: "Courier New", Courier, monospace;
   height: 30px;
