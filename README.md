@@ -35,7 +35,9 @@ Event Organizer Support
 
 Kami memiliki segudang talent untuk mengisi event anda. Dapatkan pengalaman termudah dalam menyelenggarakan event apapun tanpa bingung mencari pengisi acara. Temukan di Seekme.id!
 
-
+## photos
+- Photo by Rachel Lynette French on Unsplash
+- 
 ## refs
 - https://vuetifyjs.com/en/components/overlays
 - https://codepen.io/ericbutler555/pen/QbvxXP

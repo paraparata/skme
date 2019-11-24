@@ -30,7 +30,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .footers {
   /* font-size: 4pt; */
   font-family: "Courier New", Courier, monospace;

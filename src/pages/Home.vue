@@ -75,19 +75,23 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row class="mt-4 mb-10" justify="center">
-      <v-col cols="8">
-        <div class="mx-auto pa-6 elevation-3 text-center justify-center">
-          <v-text class="title font-weight-bold">Tunggu Apa Lagi? Join Bareng Seekme.id Sekarang Juga!!</v-text>
-          <v-img
-            alt="seekme"
-            class="justify-center"
-            contain
-            min-width="82"
-            src="../assets/seekme-logo.png"
-            width="150"
-            height="150"
-          />
+    <v-row class="mb-10" justify="center">
+      <v-col cols="11">
+        <div class="mx-auto pa-6 elevation-3 kartu">
+          <v-row>
+            <v-img
+              alt="seekme"
+              class="justify-center"
+              contain
+              min-width="82"
+              src="../assets/seekme-logo.png"
+              width="100"
+              height="100"
+            />
+          </v-row>
+          <v-row justify="center">
+            <v-text class="subtitle font-weight-bold orange--text text--darken-3 text-center">Join Us, Now</v-text>
+          </v-row>
         </div>
       </v-col>
     </v-row>
@@ -97,88 +101,89 @@
 <script>
 import Categories from "../components/Categories";
 import Bubble from "../components/Bubble";
+// import LoginOverlay from "../components/Login";
 
 export default {
   components: {
     Categories,
-    Bubble
+    Bubble,
   },
   data: () => ({
     cards: [
       {
-        title: "Pre-fab homes",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 12
       },
       {
-        title: "Favorite road trips",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Anya Terbaik",
         src:
           "https://img.okeinfo.net/content/2019/09/26/33/2109793/5-pose-seksi-anya-geraldine-dari-pantai-hingga-kolam-hot-Ik0tKUdRkG.jpg",
         flex: 6
@@ -214,5 +219,22 @@ export default {
   background-attachment: fixed;
   background-size: cover;
   background-position-y: bottom;
+}
+.kartu {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(../assets/raul-angel-9FvZfRKKfH8-unsplash.jpg);
+  background-size: cover;
+}
+.snack {
+  font-family: 'Delius';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Delius-Regular'), url(https://fonts.gstatic.com/s/delius/v9/PN_xRfK0pW_9e1rdZsg_.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 </style>
